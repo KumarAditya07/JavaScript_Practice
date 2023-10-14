@@ -11,3 +11,4 @@ const gameName = new String('Kalita')
 console.log(gameName.indexOf('K'));
 console.log(`substring : ${gameName.substring(0,3)}`)
 console.log(`slice : ${gameName.slice(1,4)}`)
+
