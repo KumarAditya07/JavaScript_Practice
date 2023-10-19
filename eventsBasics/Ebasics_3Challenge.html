@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+     const sayName = function(){
+        console.log("Aditya");
+    }
+    
+
+    let changeMe ;
+    console.log(changeMe);
+
+    document.querySelector('#start').addEventListener('click', function(){
+       
+        changeMe = setInterval(sayName, 1000);
+        
+        console.log("started")
+    })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+</html>
