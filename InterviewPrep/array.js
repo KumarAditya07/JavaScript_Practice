@@ -31,13 +31,15 @@ const sum  = nums.reduce((accumulator,curr,i,nums)=>{
 // I/p & O/p based question
 
 let student = [
-    {name:"Aman",uid:123,marks:90},
+    {name:"Aman",uid:123,marks:99},
     {name:"Saurabh",uid:4123,marks:60},
     {name:"Akshay",uid:1623,marks:70},
     {name:"Aditya",uid:1423,marks:40},
 ]
 // comvert name into uppercse
 // return details of those who get more then 60 marks
+// calculate sum of  marks of all the student with good messsge 
+// return only names of students whos soored more than 60
 
 const newStudent = student.map((stu)=>stu.name.toUpperCase());
 
@@ -47,4 +49,18 @@ const moreMarks = student.filter(({marks})=>{       //we are destructring studen
     return marks>60;
 })
 
-console.log(moreMarks);
+// console.log(moreMarks);
+
+const totalSum = student.reduce((acc,curr)=>{
+    return acc+curr.marks;
+},0);
+
+// console.log(`Total marks of students are ${totalSum}`);
+
+const studentWithMoreMarks = student.filter((curr)=>{
+    return curr.marks>60;
+}).map((curr)=>{
+    return curr.name;
+});
+
+console.log(studentWithMoreMarks);
