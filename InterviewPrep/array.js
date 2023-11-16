@@ -31,15 +31,16 @@ const sum  = nums.reduce((accumulator,curr,i,nums)=>{
 // I/p & O/p based question
 
 let student = [
-    {name:"Aman",uid:123,marks:99},
-    {name:"Saurabh",uid:4123,marks:60},
-    {name:"Akshay",uid:1623,marks:70},
-    {name:"Aditya",uid:1423,marks:40},
+    {name:"Aman",uid:123,marks:20 },
+    {name:"Saurabh",uid:4123,marks:50},
+    {name:"Akshay",uid:1623,marks:60},
+    {name:"Aditya",uid:1423,marks:90},
 ]
 // comvert name into uppercse
 // return details of those who get more then 60 marks
 // calculate sum of  marks of all the student with good messsge 
 // return only names of students whos soored more than 60
+//return total marks of student with >60 after 20 marks have beeen added to those who scoed less than 60. 
 
 const newStudent = student.map((stu)=>stu.name.toUpperCase());
 
@@ -63,4 +64,18 @@ const studentWithMoreMarks = student.filter((curr)=>{
     return curr.name;
 });
 
-console.log(studentWithMoreMarks);
+// console.log(studentWithMoreMarks);
+
+const lastQ = student.map((curr)=>{
+      if(curr.marks<=60)
+       { 
+        curr.marks+=20;
+    }
+
+      return curr;
+}).filter((curr)=>curr.marks>60)
+          .reduce((acc,curr)=>{
+            return acc+curr.marks
+          },0);
+
+          console.log(lastQ);
