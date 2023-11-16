@@ -18,4 +18,12 @@ const greaterThanTwo = nums.filter((n,i,nums)=>{
     return n>3
 });
 
-console.log(greaterThanTwo);
+// console.log(greaterThanTwo);
+
+//Reduce() concept
+
+const sum  = nums.reduce((accumulator,curr,i,nums)=>{
+     return accumulator + curr;
+},0);
+
+console.log(sum);
