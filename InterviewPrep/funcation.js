@@ -1,1 +1,1 @@
-//funcation
+//funcation questin in javascript
