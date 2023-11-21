@@ -57,10 +57,26 @@
 //     console.log(a);
 //     console.log(b);
 
-var num = 8;
- var num = 10;
+// var str = "vwzxt";
+// let count=0
+// const result = str.charCodeAt(0);
+// // for(let i = 1;i<str.length;i++){
+// //     if(str.charCodeAt(i)<str.charCodeAt(i-1))
+// //        {
+// //         count++;
+// //        }
+// // }
+// //we cannot use map direct in string becz it array method 
+// [...str].map((char,i)=>{
+//     if(str.charCodeAt(i)<str.charCodeAt(i-1))
+//        {
+//         count++;
+//        }
+// })
  
- console.log(num);
+//  console.log(count);
+ //
+ 
    
 
 
