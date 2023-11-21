@@ -76,6 +76,26 @@
  
 //  console.log(count);
  //
+
+//  function sum()
+// {
+//     // let a = 8;
+//     const b=2;
+//     var c=a+b;
+// }
+// console.log(a,b,c)
+// sum()
+// console.log(a,b,c)
+
+// let arr=[1,2,3,4,5]
+// console.log(arr[2], arr.length);
+// arr.length=0;
+// console.log(arr[2], arr.length);
+
+for (var i = 0; i < 3; i++) 
+{
+  setTimeout(function() { alert(i); }, 1000 + i);
+}
  
    
 
