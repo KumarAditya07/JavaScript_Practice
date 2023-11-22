@@ -92,11 +92,32 @@
 // arr.length=0;
 // console.log(arr[2], arr.length);
 
-for (var i = 0; i < 3; i++) 
-{
-  setTimeout(function() { alert(i); }, 1000 + i);
-}
+// for (var i = 0; i < 3; i++) 
+// {
+//   setTimeout(function() { alert(i); }, 1000 + i);
+// }
  
-   
+// for(let i = 0; i <5; i++)
+// {
+// 	setTimeout(()=>{
+// 		console.log(i);
+//     },0)
+// }  
 
+let count = 0;
+(function immediate() {
+  if (count === 0) {
+    let count = 1;
+    console.log(count); // What is logged?
+  }
+  console.log(count); // What is logged?
+})();
+
+(function fnA(a) {
+    return (function fnB(b) {
+      console.log(a); // What is logged?
+    })(1);
+  })(0);
+
+  
 
