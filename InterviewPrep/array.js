@@ -79,3 +79,7 @@ const lastQ = student.map((curr)=>{
           },0);
 
           console.log(lastQ);
+
+
+
+          
