@@ -25,18 +25,31 @@
 // const u = new user("Saurab");
 // u.getDetail();
 
-let calculator = {
-    read(){
-    this.a = +prompt("a = ",0);
-    this.b  = +prompt("b = ",0);
-    },
-    sum(){
-        return this.a + this.b;
-    },
-    mul(){
-        return this.a * this.b;
-     },
+// let calculator = {
+//     read(){
+//     this.a = +prompt("a = ",0);
+//     this.b  = +prompt("b = ",0);
+//     },
+//     sum(){
+//         return this.a + this.b;
+//     },
+//     mul(){
+//         return this.a * this.b;
+//      },
+// }
+// calculator.read();
+// calculator.sum();
+// calculator.mul();
+
+let user = {
+    name: "Aman"
 }
-calculator.read();
-calculator.sum();
-calculator.mul();
+
+function sayName(){
+   return this.name;
+}
+
+console.log(sayName());
+
+
+
